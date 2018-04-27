@@ -1,0 +1,123 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2rem;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.hover {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.site-btn {
+    position: relative;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.site-btn:hover {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.site-btn::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    border: 1px solid salmon;
+    height: 100%;
+    width: 100%;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.site-btn:hover::before {
+    background-color: salmon;
+    transition: all 0.3s;
+    bottom: -2px;
+    right: -2px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.container {
+    padding: 1rem;
+}
+nav {
+    /* border-bottom: 1px solid #333; */
+}
+nav a {
+    float: left;
+    display: block;
+    margin-right: 1rem;
+}
+.dropdown {
+    position: relative;
+    float: left;
+    /* overflow: hidden; */
+    padding-bottom: 1rem;
+}
+.dropdown .site-btn::before {
+    bottom: -2px;
+    right: -2px;
+}
+.dropdown .site-btn:hover::before {
+    bottom: -7px;
+    right: -7px;
+}
+.clearfix{
+    content: "";
+    clear: both;
+}
+.dropdown .dropdown-content {
+    position: absolute;
+    display: none;
+    top: 3.5rem;
+    min-width: 30rem;
+}
+.dropdown .dropdown-content a {
+    background: #fff;
+    border: 1px solid salmon;
+    padding: 0.5rem;
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown .dropdown-content a:hover {
+    background-color: salmon;
+    padding-left: 1.1rem;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+main a, main a:hover {
+    text-decoration: underline;
+}
+main a:hover {
+    /* padding-left: 5px; */
+    background-color: #999;
+}

@@ -59,7 +59,9 @@ li{
     -webkit-transition: all 0.3s;
 }
 .container {
+    min-width: 280px;
     padding: 1rem;
+    overflow: hidden;
 }
 nav {
     /* border-bottom: 1px solid #333; */
@@ -68,6 +70,7 @@ nav a {
     float: left;
     display: block;
     margin-right: 1rem;
+    margin-bottom: 10px;
 }
 .dropdown {
     position: relative;
@@ -90,8 +93,9 @@ nav a {
 .dropdown .dropdown-content {
     position: absolute;
     display: none;
-    top: 3.5rem;
+    top: 3.7rem;
     min-width: 30rem;
+    background: #fff;
 }
 .dropdown .dropdown-content a {
     background: #fff;

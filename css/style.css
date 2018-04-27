@@ -60,8 +60,10 @@ li{
 }
 .container {
     min-width: 280px;
+    max-width: 1200px;
     padding: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    margin: 0 auto;
 }
 nav {
     /* border-bottom: 1px solid #333; */

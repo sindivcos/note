@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Duy Tân's Github</title>
+    <title>Duy Tân's note</title>
 </head>
 
 <body>
     <div class="container">
         <h1>DUY TÂN NOTE</h1>
         <nav>
-            <a href="#week1" class="site-btn">tuần 1</a>
-            <a href="#week2" class="site-btn">tuần 2</a>
-            <a href="#week3" class="site-btn">tuần 3</a>
+            <a href="#foundation" class="site-btn">foundation</a>
+            <a href="#fontawesome" class="site-btn">fontawesome</a>
+            <a href="#aspect-ratio" class="site-btn">aspect-ratio</a>
             <div class="dropdown">
                 <button onclick="dropMenu()" class="site-btn drop-btn">git ft. github</button>
                 <div class="dropdown-content" id="drop-content">
@@ -28,8 +28,8 @@
             <div class="clearfix"></div>
         </nav>
         <main>
-            <section id="week1">
-                <h3>$ TUẦN 1</h3>
+            <section id="foundation">
+                <h3>$ Foundation</h3>
                 <h4>> Tìm hiểu và cài đặt [<a href="https://drive.google.com/open?id=1U3dmWRvwaYZEWbw56bqWqXgnr_PwG-t6" target="_blank">slack</a>] </h4> 
                 <h4>> Tìm hiểu và cài đặt [<a href="https://drive.google.com/open?id=1WdkKiTDePcUqLaPebDME5QGcm1YCtR05">trello</a>] </h4>
                 <h4>> Coding convention </h4>
@@ -48,27 +48,39 @@
                     <li>/<a href="https://drive.google.com/open?id=1cFh9wMyQ4McUAZ-397WNxFVY0A7fMVrD" target="_blank">Các lệnh git thường dùng</a></li>                    
                 </ul>
             </section>
-            <section id="week2">
-                    <h3>$ TUẦN 2</h3>
-                    <h4>> Cloning mommylovespa</h4>
-                    <ul>
-                        <li>/<a href="https://drive.google.com/open?id=11yuUCYLxSkv3MQsbro_lgau5X9QH3_H2" target="_blank">Source code HTML</a></li>
-                        <li>/<a href="https://sindivcos.github.io/mommylovespa" target="_blank">Demo</a></li>
-                    </ul>
-                    <h4>> Cloning mylienspa </h4>
-                    <ul>
-                        <li>/<a href="https://drive.google.com/open?id=1INOMiRfRICIdIWg4k5uypSIAZCFNYmi5" target="_blank">Source code HTML</a></li>
-                        <li>/<a href="https://sindivcos.github.io/mylienspa" target="_blank">Demo</a></li>
-                    </ul>
+            <section id="fontawesome">
+                    <h3>$ fontawesome</h3>
+                    <h4>> Các bước thêm fontawesome</h4>
+                    <ol>
+                        <li>thêm file css và js của fa</li>
+                        <li>copy folder webfonts vào folder fonts</li>
+                        <li>fix url trong file css của fa cho đúng với path của folder webfonts</li>
+                        <li>lên page của fa để refer icon</li>
+                    </ol>
             </section>
-            <section id="week3">
-                    <h3>$ TUẦN 3</h3>
-                    <h4>> Cắt HTML BizSofa</h4>
-                    <ul>
-                        <li>/<a href="https://drive.google.com/open?id=1y7breTHb_rB_fMF3Du7wcHXFkk8M9DhM" target="_blank">Source code HTML</a></li>
-                        <li>/<a href="https://sindivcos.github.io/bizsofa-html" target="_blank">Demo</a></li>
-                    </ul>
-            </section>            
+            <section id="aspect-ratio">
+                    <h3>$ aspect ratio</h3>
+                    <h4>> Các bước tạo aspect ratio</h4>
+                    <ol>
+                        <li>div container:
+                            <ol>
+                                <li>height=0</li>
+                                <li>padding-top: tùy vào ratio (100%:1-1; 75%:4-3; 16-9...) </li>
+                                <li>postion: ralative</li>
+                                <li>width: auto/ 100%</li>
+                                <li>align-items, justify-content nếu cần</li>
+                            </ol>
+                        </li>
+                        <li>div content: 
+                            <ol>
+                                <li>postion: absolute</li>
+                                <li>set top:0, left: 0/ hoặc tùy chọn theo yêu cầu</li>
+                                <li>object-fit</li>
+                                <li>height, width</li>
+                            </ol>
+                        </li>
+                    </ol>
+            </section>
         </main>
         <footer>
             <br>

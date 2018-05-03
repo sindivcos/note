@@ -77,6 +77,9 @@ nav a {
     /* overflow: hidden; */
     padding-bottom: 1rem;
 }
+button {
+    font-size: 1rem;
+}
 .dropdown .site-btn::before {
     bottom: -2px;
     right: -2px;

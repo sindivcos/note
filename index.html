@@ -96,6 +96,11 @@
                         </li>
                     </ol>
             </section>
+            <section id="caculate-position">
+              <h3>$ Mẹo tìm vị trí phần tử trong Js</h3>
+              <li>Dùng vòng lặp for sau: for (var i = 0; [element] = [element].previousElementSibling; i++)</li>
+              <li>Giải thích: nếu điều kiện sai (== null/false) thì vòng for sẽ dừng lại. Trong trường hợp này, điều kiện là kiểm tra phần tử "anh em" ở phía trước nó, vòng lặp sẽ tiếp tục chạy cho đến khi tới phần tử đầu tiên của mảng => phần tử "anh em" trước của nó sẽ là null => vòng lặp sẽ kết thúc và ta có chỉ số của element đó chính là i, tăng lên sau mỗi vòng lặp</li>
+            </section>
         </main>
         <footer>
             <br>
